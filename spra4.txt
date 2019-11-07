@@ -1,0 +1,12 @@
+Sprawozdanie
+
+Numer inode to odniesienie do pliku i jego adresu w systemie. To wejœcie do tabeli inode, w której mog¹ znajdowac siê takie atrybuty jak typ pliku, jego wielkoœæ, kto jest w³aœcicielem itp. Mo¿na j¹ sprawdziæ za pomoc¹ komedy stat.
+
+hardlink -rw-r--r-- inody: 84707, softlink lrwxrwxrwx inody: 84708, plik.txt -rw-r--r-- inody:84707
+
+Po przeniesieniu softlink przesta³ dzia³aæ a hardlink dalej dzia³a
+
+zmiana w³aœciciela pliku: sudo chown pi plik.txt
+przypisanie do grupy: sudo chgrp edytorzy plik.txt
+
+zmiana uprawnieñ: sudo chmod 470 plik.txt
